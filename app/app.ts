@@ -3,7 +3,7 @@ import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {TabsPage} from './pages/tabs/tabs';
 import {LoginPage} from './pages/login/login';
-
+import {NG2_WEBSTORAGE} from 'ng2-webstorage';
 
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>'
@@ -24,4 +24,4 @@ export class GroupBuyApp {
   }
 }
 
-ionicBootstrap(GroupBuyApp);
+ionicBootstrap(GroupBuyApp, [ NG2_WEBSTORAGE ]);
